@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Essentials — market routing demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <img class="brand-logo" src="assets/logo.png" alt="Design Essentials Suriname">
+
+  <section id="landing">
+    <h1>Demo — not the live store</h1>
+    <p>Choose which market you're shopping as, to see how pricing, stock and checkout differ.</p>
+    <div class="market-choices">
+      <button class="market-btn sr" id="choose-sr">
+        Shop Suriname
+        <span class="flag">Existing, active store</span>
+      </button>
+      <button class="market-btn gy" id="choose-gy">
+        Shop Guyana
+        <span class="flag">New entry point</span>
+      </button>
+    </div>
+  </section>
+
+  <section id="store">
+    <div class="store-header">
+      <div class="store-header-left">
+        <span class="label">Shopping in</span>
+        <span class="market-script" id="current-market-label"></span>
+      </div>
+      <button class="switch-link" id="switch-market">Switch market</button>
+    </div>
+
+    <div class="catalog" id="catalog"></div>
+
+    <div class="cart">
+      <h2>Cart</h2>
+      <div id="cart-items"></div>
+      <div class="cart-totals" id="cart-totals"></div>
+      <p class="gateway-note" id="gateway-note"></p>
+      <button class="pay-btn" id="pay-btn" disabled>Pay</button>
+    </div>
+  </section>
+
+  <section id="confirmation">
+    <div class="stamp">
+      <h2>Order confirmed</h2>
+      <p>Order <strong class="order-id"></strong></p>
+      <p>Market: <span class="order-market"></span></p>
+      <p>Total charged: <span class="order-total"></span></p>
+      <p>Gateway: <span class="order-gateway"></span></p>
+      <div class="demo-flag">This is a demo. No real payment was processed.</div>
+    </div>
+    <div>
+      <button class="new-order-btn" id="new-order-btn">Start a new order</button>
+    </div>
+  </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
