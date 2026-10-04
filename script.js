@@ -2,8 +2,8 @@
 // Project settings > API > Project URL / anon public key.
 // The anon key is safe to expose in client-side code as long as the
 // "products" table only has a public SELECT policy (see supabase/schema.sql).
-const SUPABASE_URL = 'YOUR_SUPABASE_PROJECT_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://wopuzwtnmmlsqhbqsgzw.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_01fUirJj6DOvUG9s6iIWXQ_KPW8fVI0';
 // ----------------------------------------------------------------------
 
 // Decided values, carried over from the real plan (not placeholders):
